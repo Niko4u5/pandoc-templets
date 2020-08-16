@@ -1,3 +1,16 @@
+% available options
+% toc: true % table of content
+% lof: true % list of figures
+% lot: true % list of tabels
+% title:
+% subtitel:
+% titlegraphic:
+% author:
+% institute:
+% date:
+% abstract:
+
+
 \PassOptionsToPackage{unicode=true$for(hyperrefoptions)$,$hyperrefoptions$$endfor$}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 $if(colorlinks)$
@@ -12,10 +25,19 @@ $endif$$endif$
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-
 % line spacing
 \usepackage{setspace}
 \setstretch{1.5}
+
+% seting margins and paper size
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=25mm,
+ right=25mm,
+ top=35mm,
+ bottom=30mm,
+ }
 
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -127,9 +149,6 @@ $endif$
 \urlstyle{same}  % don't use monospace font for urls
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
-$endif$
-$if(geometry)$
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
 
 $if(listings)$
@@ -341,10 +360,6 @@ $endif$
 
 % creates the body of the document
 $body$
-
-
-\printglossaries
-
 
 $if(natbib)$
 $if(bibliography)$
