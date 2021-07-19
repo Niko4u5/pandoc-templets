@@ -1,0 +1,20 @@
+---
+pdfa: true
+
+fontsize: 12
+fontfamily: arev
+linestretch: 1.5
+
+papersize: a4
+geometry:
+- top=25mm
+- left=25mm
+- right=25mm
+- bottom=25mm
+
+
+numbersections: true
+toc: true
+
+toc-title: Inhalt
+...
