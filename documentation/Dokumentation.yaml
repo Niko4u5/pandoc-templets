@@ -15,6 +15,7 @@ geometry:
 
 numbersections: true
 toc: true
+lof: true
 
 toc-title: Inhalt
 ...
